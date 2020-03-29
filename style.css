@@ -5,6 +5,10 @@
 	height: 35px;
 	background: white;
 }
+body {
+	font-family: "Bookman", URW Bookman L, serif;
+	font-style: oblique;
+}
 iframe {
 	display:block;
 	position: relative;

@@ -128,7 +128,7 @@
  <h2>Give me a like</h2>
 <br/>
 <br/>
- <div class="fb-like" data-href="https://sise-web-development-environments.github.io/205595283/." data-width="" data-layout="button_count" data-action="like" data-size="large" data-share="false"></div>
+ <div class="fb-like" data-href="https://sise-web-development-environments.github.io/205595283/" data-width="" data-layout="button_count" data-action="like" data-size="large" data-share="false"></div>
 </section>
 
 <section id="qrcoder" class="section">
@@ -168,7 +168,7 @@
 <br/>
  <h2>Contact me</h2>
  <div class="container">
-  <form action="mailto:liatp@post.bgu.ac.il" method="post" autocomplete="on">
+  <form method="post" action="mailto:liatp@post.bgu.ac.il" autocomplete="on">
 
    <label for="mail">Email Address</label>
    <br/>
@@ -178,16 +178,14 @@
    <br/>
    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
    <br/>
-   <input type="submit" value="Submit">
-
+   <input type="submit" value="Submit" onClick="add()">
+   <script>
+    function add(){
+     document.getElementById("subject").innerText
+    }
+   </script>
   </form>
  </div>
- <>
-
- </form>
-<br/>
-<br/>
-<br/>
 </section>
 
 
