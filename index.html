@@ -6,7 +6,6 @@
 <body>
 <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0"></script>
-<div id="menu">
  <ul>
 <li><a href="#about">About Me</a></li>
 <li><a href="#photos">My Photos</a></li>
@@ -128,7 +127,9 @@
  <h2>Give me a like</h2>
 <br/>
 <br/>
- <div class="fb-like" data-href="https://sise-web-development-environments.github.io/205595283/" data-width="" data-layout="button_count" data-action="like" data-size="large" data-share="false"></div>
+ <div class="fb-like" data-href="https://sise-web-development-environments.github.io/205595283/" data-width="" data-layout="standard" data-action="like" data-size="small" data-share="true"></div>
+<br/>
+ <br/>
 </section>
 
 <section id="qrcoder" class="section">
@@ -185,7 +186,8 @@
    <input type="submit" value="Submit" onClick="add()">
    <script>
     function add(){
-     let emoji = " " + String.fromCodePoint(128120);
+     let emoji = String.fromCodePoint(128120);
+     document.getElementById("body").value += " ";
      document.getElementById("body").value += emoji;
     }
    </script>
